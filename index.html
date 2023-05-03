@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    </head>
+    <body>
+    
+    <form action={{url_for("result")}} method='post'>
+        <input type="text" name='a' class='input' placeholder="number 1"/>
+        <input type="text" name='b' class='input' placeholder="number 2 "/>
+        <select name="op" class='input'>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <button type='submit' class='a'>enter</button>
+    </form>
+    <h1>
+        {{result}}
+    </h1>
+    </body>
+    </html>
+    
